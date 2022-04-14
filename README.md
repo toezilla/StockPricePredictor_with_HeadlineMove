@@ -1,2 +1,3 @@
 # StockPricePredictor_with_HeadlineMove
-Stock Price Prediction Based On News Headline and Stock Data
+
+Stock price prediction modeling for short-term investment using LSTM and Headline Move
