@@ -53,7 +53,7 @@
 
 
 
-
+<br>
 
 ## 2. 데이터 수집
 - 뉴스 데이터
@@ -68,6 +68,8 @@
   - 주가 데이터
     - 데이터 양: 
 
+<br>
+
 ## 3. 데이터 전처리
 1. 기본적은 전처리
 - 특수문자 제거
@@ -78,6 +80,8 @@
 2. 토크나이저(Tokenizer)
 - Kkma
 - Okt
+
+<br>
 
 ## 4. 분석 내용
 ### 4.1 Methodology
@@ -100,11 +104,14 @@ As shown in the table below, after calibration, we were able to obtain better mo
 Prediction graph after correlation
 ![image](https://user-images.githubusercontent.com/98089273/170457198-3b751536-c03b-4795-81fd-63481aa68b35.png)
 
+<br>
 
-## 4. 분석 한계점
+## 5. 분석 한계점
 1. 뉴스 분석 과정에서 이따금씩 해당 산업과 관련성이 없는 뉴스도 같이 발견되어 예측 정확도가 예상보다 떨어진다.
 3. 주식 가격에 나타나는 급격한 변동을 잘 에측하지 못한다.
 4. 통신, 반도체, 제약 세 산업군의 주가 예측에 대한 내용이므로, 다른 산업군에 일반화시키기 힘들다.
+
+<br>
 
 
 ### Link of Full Report
