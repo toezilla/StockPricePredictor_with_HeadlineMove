@@ -55,11 +55,7 @@
 
 
 
-## 2. 프로젝트 내용
-### 2.1 방법론
-![image](https://user-images.githubusercontent.com/98089273/170453655-5b6d5730-09bb-45cb-a182-a9a822cdc018.png)
-
-#### 2.1.1 데이터 수집
+## 2. 데이터 수집
 - 뉴스 데이터
   - MK 데이터
     - 데이터 양: 142750개
@@ -72,7 +68,7 @@
   - 주가 데이터
     - 데이터 양: 
 
-#### 2.1.2 데이터 전처리
+## 3. 데이터 전처리
 1. 기본적은 전처리
 - 특수문자 제거
 - 문장 분리
@@ -83,27 +79,33 @@
 - Kkma
 - Okt
 
-#### 2.1.3 모델링
+## 4. 분석 내용
+### 4.1 Methodology
+![image](https://user-images.githubusercontent.com/98089273/170453655-5b6d5730-09bb-45cb-a182-a9a822cdc018.png)
 
-#### 2.1.4 Error Correction
+### 4.2 Graph of Loss
+![image](https://user-images.githubusercontent.com/98089273/170456719-2225b57d-c05e-4f13-84cc-f3e70c4ad396.png)
+
+### 4.3 Error Correction
 We did error corrction. Because we do not have enough data, so model shows over 3% error when using MAPE metric.
 
 In addition, the goal of our project is not to predict an increase or decrease, but to precisely match the stock's next day's open, high, low, and close prices.
 
 To achieve the goal, we made an assumption that the error of the previous day and that of the next day would be similar, because they both use almost the same data, and we made a formula. The formula is as follows.
 ![image](https://user-images.githubusercontent.com/98089273/170455690-4c5a5374-8608-41c3-b0f0-0bc77d6ca97a.png)
+
 As shown in the table below, after calibration, we were able to obtain better model performance.
 ![image](https://user-images.githubusercontent.com/98089273/170455733-3129b0e8-3445-4e07-9cf2-e1e05f547801.png)
 
+Prediction graph after correlation
+![image](https://user-images.githubusercontent.com/98089273/170457198-3b751536-c03b-4795-81fd-63481aa68b35.png)
 
-## 3. 분석 결과 및 한계점
-### 3.1 분석 결과
-![image](https://user-images.githubusercontent.com/98089273/170455766-2570c74e-3114-4d45-adcc-c93da7b0bb61.png)
 
-### 3.2 한계점
+## 4. 분석 한계점
 1. 뉴스 분석 과정에서 이따금씩 해당 산업과 관련성이 없는 뉴스도 같이 발견되어 예측 정확도가 예상보다 떨어진다.
 3. 주식 가격에 나타나는 급격한 변동을 잘 에측하지 못한다.
 4. 통신, 반도체, 제약 세 산업군의 주가 예측에 대한 내용이므로, 다른 산업군에 일반화시키기 힘들다.
+
 
 ### Link of Full Report
 https://lovely-polka-e0b.notion.site/9dcfb84eee464495ab735b1908b962a1
